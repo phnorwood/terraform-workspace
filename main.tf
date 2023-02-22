@@ -5,5 +5,5 @@ data "tfe_workspace_ids" "all" {
 
 output "workspace_list" {
     description = "workspaces"
-    value = data.tfe_workspace_ids.all.full_names
+    value = data.tfe_workspace_ids.all
 }
