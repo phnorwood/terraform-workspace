@@ -1,6 +1,7 @@
 data "tfe_workspace_ids" "all" {
-  names        = ["*"]
+  #names        = ["*"]
   organization = "porwood-dot-com"
+  tag_names    = ["dev"]
 }
 
 output "workspace_list" {
